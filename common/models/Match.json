@@ -1,0 +1,26 @@
+{
+  "name": "Match",
+  "plural": "Matches",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "hometeam": {
+      "type": "string",
+      "required": true
+    },
+    "awayteam": {
+      "type": "string",
+      "required": true
+    },
+    "sets": {
+      "type": [
+        [ "number"]
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
