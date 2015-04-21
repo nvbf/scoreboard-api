@@ -1,5 +1,5 @@
 if (!process.env.MONGO_URL) {
-  throw new Error('No environment variable called "mongoUri".');
+  throw new Error('No environment variable called "MONGO_URL".');
 }
 
 module.exports = {
@@ -7,5 +7,5 @@ module.exports = {
     name: 'db',
     connector: 'loopback-connector-mongodb',
     url: process.env.MONGO_URL
-  }
+  }-
 };
